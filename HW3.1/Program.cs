@@ -13,13 +13,14 @@ namespace HW3._1
             int k = 5;
             Console.WriteLine("Select  Game...");
             GameSelector GS = new GameSelector();
-
+            Console.ReadKey();
             while (k < 10)
             {
                 GS.GameSelector1();
-                Console.ReadKey();
+
             }
-                
+
+
         }
     }
 
@@ -40,20 +41,20 @@ namespace HW3._1
                 switch (Input)
                 {
                     case "1":
-                        Console.WriteLine("You have selected Cube attack");
+                    Console.WriteLine("You have selected Cube attack");
                         break;
                     case "2":
-                        Console.WriteLine("You have selected Battle Ship");
+                    Console.WriteLine("You have selected Battle Ship");
                         break;
                     case "3":
-                        Console.WriteLine("You have selected Save the Goat");
+                    Console.WriteLine("You have selected Save the Goat");
                         break;
                 default:
                     Console.WriteLine("This is not an option");
                     break;
                 }
                
-            //catch
+            //catch anything but a number
         }  
        
                 
